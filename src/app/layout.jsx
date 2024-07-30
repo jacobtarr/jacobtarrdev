@@ -21,9 +21,9 @@ const inter = localFont({
 });
 
 export const metadata = {
-  title: "Resumo – Digital CV Template",
+  title: "Jacob Tarr - Web Developer",
   description:
-    "Unlock career opportunities with our sleek digital CV template.",
+    "Passionate front end web developer with a focus and expertise in developing production-ready Wordpress and Craft CMS sites",
 };
 
 export default function RootLayout({ children }) {
