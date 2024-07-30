@@ -22,7 +22,7 @@ const projectsList = [
     category: "Craft CMS",
     role: "Lead Developer at Southleft",
     description:
-      "I was responsible for the frontend development and UI/UX design for the New Books Network website redesign. Utilizing Craft CMS, I enhanced the user experience by introducing personalized user accounts, implementing a recommendation engine, and integrating Algolia for improved search functionality. This project significantly boosted user engagement and satisfaction.",
+      "I was responsible for the frontend development for the New Books Network website redesign. Utilizing Craft CMS, I enhanced the user experience by introducing personalized user accounts, implementing a recommendation engine, and integrating Algolia for improved search functionality. This project significantly boosted user engagement and satisfaction.",
     website: "https://newbooksnetwork.com",
   },
   {
