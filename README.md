@@ -1,7 +1,3 @@
-# Personal CV
-
-Amiso is a [Launchoice](https://launchoice.com) site template built using [Tailwind CSS](https://tailwindcss.com) and [Next.js](https://nextjs.org).
-
 ## Getting started
 
 To get started with this template, first install the npm dependencies:
