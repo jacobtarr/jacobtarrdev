@@ -1,5 +1,5 @@
 import Image from "next/image";
-import cover from "@/images/cover.jpg";
+import cover from "@/images/cover-2.jpg";
 import photo from "@/images/photo.jpg";
 import Badge from "../ui/Badge";
 import CardContent from "../ui/CardContent";
@@ -8,7 +8,7 @@ import { DownloadIcon } from "../icons/DownloadIcon";
 const user = {
   name: "Jacob Tarr",
   role: "Front End Web Developer",
-  location: "Mesa, Arizona",
+  location: "Mesa, AZ",
   bio: "Web developer with 9+ years of experience in building web apps. Skilled in Wordpress, Craft CMS and JavaScript applications.",
   status: true,
   skills: [

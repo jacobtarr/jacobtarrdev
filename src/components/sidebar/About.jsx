@@ -19,10 +19,10 @@ export default function About() {
         <hr className="border-gray-200" />
 
         <div className="flex flex-wrap gap-4">
-          <a href="#" className="group inline-flex items-center gap-x-2">
+          <a href="https://www.linkedin.com/in/jacobtarr/" className="group inline-flex items-center gap-x-2">
             <LinkIcon className="size-4" />
             <span className="font-medium group-hover:underline group-hover:underline-offset-4">
-              cristopher.com
+              linkedin.com/in/jacobtarr/
             </span>
           </a>
 

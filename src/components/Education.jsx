@@ -4,9 +4,7 @@ import CardHeading from "./ui/CardHeading";
 import CardContent from "./ui/CardContent";
 import InfoItem from "./ui/InfoItem";
 
-import stanford from "@/images/stanford.jpg";
-import universityofcalifornia from "@/images/universityofcalifornia.jpg";
-import deanza from "@/images/deanza.jpg";
+import gannon from "@/images/gannon.png";
 
 import { GraduationCapIcon } from "./icons/GraduationCapIcon";
 import { PinIcon } from "./icons/PinIcon";
@@ -14,31 +12,20 @@ import { CalendarIcon } from "./icons/CalendarIcon";
 
 const educationList = [
   {
-    icon: stanford,
-    degree: "Master of Science in Computer Science",
-    university: "Stanford University",
-    location: "Stanford, CA",
-    period: "2018 - 2020",
-    description:
-      "Developed a machine learning algorithm to predict customer churn. Built a web application to help students find roommates.",
-  },
-  {
-    icon: universityofcalifornia,
-    degree: "Bachelor of Science in Computer Science",
-    university: "University of California",
-    location: "Berkeley, CA",
-    period: "2014 - 2018",
-    description:
-      "Developed a mobile app to help students track their expenses. Built a website for a local business.",
-  },
-  {
-    icon: deanza,
-    degree: "Associate of Science in Computer Science",
-    university: "De Anza College",
-    location: "Cupertino, CA",
+    icon: gannon,
+    degree: "Master of Science in Computer Science, Web Development",
+    university: "Gannon University",
+    location: "Erie, PA",
     period: "2012 - 2014",
-    description:
-      "Developed a game using Python. Built a website for a student organization.",
+    description: "Grade: 3.62 GPA, Studied web development as an option. Graduated in December 2014"
+  },
+  {
+    icon: gannon,
+    degree: "Bachelor of Arts in Journalism Communications",
+    university: "Gannon University",
+    location: "Erie, PA",
+    period: "2008 - 2012",
+    description: "Grade: 3.17 GPA, Activities and societies: The Gannon Knight (school newspaper), 90.5 WERG FM"
   },
 ];
 
@@ -68,8 +55,10 @@ export default function Education() {
                   <InfoItem icon={PinIcon} text={location} />
                   <InfoItem icon={CalendarIcon} text={period} />
                 </div>
-
-                <p className="mt-4 max-w-lg text-gray-600">{description}</p>
+                {description && (
+                  <p className="mt-4 max-w-lg text-gray-600">{description}</p>
+                )}
+                
               </div>
             </CardContent>
           ),
