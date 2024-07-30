@@ -8,8 +8,8 @@ import { DownloadIcon } from "../icons/DownloadIcon";
 const user = {
   name: "Jacob Tarr",
   role: "Front End Web Developer",
-  location: "USA",
-  bio: "Web developer, with a focus and expertise in developing production-ready Wordpress and Craft CMS sites. My career is not just deﬁned by my technical skills, but also by my ability to work with other team members, mentorship of junior developers, and ability to stay ahead of the curve in a rapidly evolving digital landscape.",
+  location: "Mesa, Arizona",
+  bio: "Web developer with 9+ years of experience in building web apps. Skilled in Wordpress, Craft CMS and JavaScript applications.",
   status: true,
   skills: [
     "Wordpress",

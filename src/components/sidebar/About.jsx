@@ -12,11 +12,7 @@ export default function About() {
       <CardContent className="mt-4 space-y-4">
         <div className="prose prose-sm prose-gray text-gray-600">
           <p>
-            I am passionate about using technology to solve real-world problems.
-            I am always looking for new ways to improve the user experience and
-            make software more accessible to everyone. I am also a strong
-            advocate for open source software and I am always willing to
-            contribute to the community.
+            I am a passionate front end web developer with a focus and expertise in developing production-ready Wordpress and Craft CMS sites. My career is not just deﬁned by my technical skills, but also by my ability to work with other team members, mentorship of junior developers, and ability to stay ahead of the curve in a rapidly evolving web development landscape.
           </p>
         </div>
 
