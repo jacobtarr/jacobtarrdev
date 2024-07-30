@@ -4,10 +4,11 @@ import CardHeading from "./ui/CardHeading";
 import CardContent from "./ui/CardContent";
 import InfoItem from "./ui/InfoItem";
 
-import codecrafthub from "@/images/codecrafthub.jpg";
-import ecommerceboost from "@/images/ecommerceboost.jpg";
-import cloudsnip from "@/images/cloudsnip.jpg";
-import healthtrackr from "@/images/healthtrackr.jpg";
+import newbooksnetwork from "@/images/newbooksnetwork.jpg";
+import bmoreart from "@/images/bmoreart.jpg";
+import aruliden from "@/images/aruliden.jpg";
+import smartling from "@/images/smartling.jpg";
+import wud from "@/images/wud.jpg";
 
 import { LinkIcon } from "./icons/LinkIcon";
 import { FolderIcon } from "./icons/FolderIcon";
@@ -16,44 +17,49 @@ import { CalendarIcon } from "./icons/CalendarIcon";
 
 const projectsList = [
   {
-    icon: codecrafthub,
-    name: "CodeCraftHub",
-    category: "Developer Tools",
-    role: "Co-Founder",
-    date: "Jun 2021",
+    screenshot: newbooksnetwork,
+    name: "New Books Network",
+    category: "Craft CMS",
+    role: "Lead Developer at Southleft",
     description:
-      "CodeCraftHub is a collaborative platform for developers, streamlining code review and project management. Enhance your team's productivity with our intuitive tools.",
-    website: "https://codecrafthub.com",
+      "I was responsible for the frontend development and UI/UX design for the New Books Network website redesign. Utilizing Craft CMS, I enhanced the user experience by introducing personalized user accounts, implementing a recommendation engine, and integrating Algolia for improved search functionality. This project significantly boosted user engagement and satisfaction.",
+    website: "https://newbooksnetwork.com",
   },
   {
-    icon: ecommerceboost,
-    name: "E-commerceBoost",
-    category: "E-commerce",
-    role: "Lead Developer",
-    date: "Dec 2022",
+    screenshot: bmoreart,
+    name: "BMore Art",
+    category: "Wordpress",
+    role: "Lead Developer at Southleft",
     description:
-      "E-commerceBoost is a full-stack solution for online retailers, offering seamless inventory management, secure payment gateways, and a user-friendly shopping experience.",
-    website: "https://ecommerceboost.io",
+      "I led the frontend development for BmoreArt's website redesign, collaborating with Amanda Buck to create a visually compelling and user-friendly platform. Utilizing WordPress and Shopify, I facilitated the migration of 12+ years of art and culture content, enhancing the site’s functionality and boosting user engagement and revenue.",
+    website: "https://bmoreart.com",
   },
   {
-    icon: cloudsnip,
-    name: "CloudSnip",
-    category: "Cloud Services",
-    role: "Technical Lead",
-    date: "May 2020",
+    screenshot: aruliden,
+    name: "Aruliden",
+    category: "Wordpress",
+    role: "Lead Developer at Southleft",
     description:
-      "CloudSnip is a versatile cloud storage service, providing users with secure file storage, sharing, and synchronization across devices. Experience the next level of cloud convenience.",
-    website: "https://cloudsnip.net",
+      "I led the frontend development for Aruliden's website redesign. They wanted a bold new way of capturing the projects they've done at an agency and one of the fun but challenging things with this website was the way they wanted to handle page transitions. I used Swup JS for this.",
+    website: "https://aruliden.com",
   },
   {
-    icon: healthtrackr,
-    name: "HealthTrackr",
-    category: "HealthTech",
-    role: "Founder",
-    date: "Oct 2023",
+    screenshot: smartling,
+    name: "Smartling",
+    category: "Contentful / Gatsby",
+    role: "Website Maintenance at Southleft",
     description:
-      "HealthTrackr revolutionizes personal health management, offering a comprehensive platform for tracking fitness, nutrition, and health metrics. Take control of your well-being.",
-    website: "https://healthtrackr.app",
+      "I was responsible for the web maintenance of Smartling's website, utilizing Contentful as the CMS and Gatsby with React for the frontend. My role involved ensuring the site remained up-to-date and functional, implementing new features, and optimizing the user experience. This maintenance work helped to keep the website running smoothly and efficiently, providing users with a seamless interaction.",
+    website: "https://smartling.com",
+  },
+  {
+    screenshot: wud,
+    name: "Wud Furniture",
+    category: "Wordpress / Shopify API",
+    role: "Lead Developer at Southleft",
+    description:
+      "Wud Furniture, based out of New York, came to us with the vision of creating a bold new website to showcase their modern furniture designs. I led the development, integrating WordPress with the Shopify API to allow users to order wood samples directly from the site. This project emphasized a seamless user experience and effectively highlighted Wud Furniture's innovative products.",
+    website: "https://wudfurniture.com",
   },
 ];
 
@@ -62,26 +68,27 @@ export default function Projects() {
     <Card>
       <CardHeading heading="Projects" />
 
-      <div className="mt-4 space-y-1.5">
+      <div className="mt-4 grid grid-cols-1 gap-2 md:grid-cols-2">
         {projectsList.map(
-          ({ icon, name, category, role, date, description, website }) => (
+          ({ screenshot, name, category, role, description, website }) => (
             <CardContent
               key={name}
               className="flex flex-col gap-4 duration-150 hover:bg-gray-100 sm:flex-row"
             >
-              <Image
-                src={icon}
-                alt=""
-                className="size-12 rounded-full border-2 border-white shadow-sm"
-              />
-
               <div className="w-full">
+                {screenshot && (
+                  <Image
+                    src={screenshot}
+                    alt=""
+                    className="mb-4"
+                  />
+                )}
+                
                 <h3 className="font-medium">{name}</h3>
 
                 <div className="mt-1.5 flex flex-wrap items-center gap-x-4 gap-y-2 text-gray-600">
                   <InfoItem icon={FolderIcon} text={category} />
                   <InfoItem icon={UserIcon} text={role} />
-                  <InfoItem icon={CalendarIcon} text={date} />
                 </div>
 
                 <p className="mt-4 max-w-lg text-gray-600">{description}</p>
