@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Script from "next/script";
 import "./globals.css";
 import localFont from "next/font/local";
 import Sidebar from "@/components/sidebar";
@@ -33,22 +34,23 @@ export default function RootLayout({ children }) {
       <Head>
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
-        {/* Google Analytics */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-YB85B6WMPT"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-YB85B6WMPT');
-            `,
-          }}
-        />
       </Head>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-YB85B6WMPT"
+      />
+      <Script
+        id="google-analytics"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-YB85B6WMPT');
+          `,
+        }}
+      />
       <body className="bg-gray-100 text-sm antialiased">
         <div className="mx-auto my-4 max-w-xl px-4 lg:max-w-5xl">
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
