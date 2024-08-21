@@ -37,10 +37,13 @@ const jobsList = [
     period: "August 2019 - July 2022",
     type: "Full-time",
     description: [
-      "Responsible for the development of websites using modern CSS to handle intricate UI designs",
-      "Build custom Wordpress, Craft CMS, and Next.js website solutions for clients",
-      "Apply Atomic Design architecture to websites, web applications, component libraries, and design systems",
-      "Lead client development projects, ensuring seamless integration strategies for both new initiatives and existing codebases"
+      "Collaborated closely with UX and UI designers to ensure pixel-perfect implementation of designs across various browsers.",
+      "Developed custom WordPress website solutions tailored to client needs, while also contributing to projects on platforms such as Gatsby, Next.js, React, WooCommerce, Craft CMS, and Node.js. Integrated GraphQL alongside Gatsby and Craft CMS to optimize data fetching and enhance overall application performance.",
+      "Applied Atomic Design principles and BEM methodology to craft scalable, maintainable websites, web applications, component libraries, and comprehensive design systems.",
+      "Led client-facing development projects, overseeing seamless integration strategies across both new initiatives and legacy codebases.",
+      "Embraced Agile methodologies, participating in Scrum sprints, daily standups, and retrospectives to enhance team efficiency and project delivery.",
+      "Utilized version control systems, including Git, to manage code repositories and ensure meticulous tracking of changes.",
+      "Implemented design systems using Storybook to maintain consistency and efficiency across projects."
     ],
   },
   {
