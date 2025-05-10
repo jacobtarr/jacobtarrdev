@@ -9,7 +9,7 @@ const user = {
   name: "Jacob Tarr",
   role: "Front End Web Developer",
   location: "Mesa, AZ",
-  bio: "Web developer with 9+ years of experience in building web apps. Skilled in Wordpress, Craft CMS and JavaScript applications.",
+  bio: "Web developer with 10+ years of experience in building web apps. Skilled in Wordpress, Craft CMS and JavaScript applications.",
   status: true,
   skills: [
     "Wordpress",
@@ -90,7 +90,7 @@ export default function User() {
           </div>
 
           <a
-            href="/resume.pdf"
+            href="/resume2025.pdf"
             className="inline-flex w-full items-center justify-center gap-x-4 rounded-md bg-blue-600 px-4 py-2.5 font-medium text-white duration-150 hover:bg-blue-700"
             download
           >

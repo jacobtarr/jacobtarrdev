@@ -6,6 +6,7 @@ import Badge from "./ui/Badge";
 import InfoItem from "./ui/InfoItem";
 
 import google from "@/images/google.jpg";
+import zgm from "@/images/zgm.jpeg";
 import southleft from "@/images/southleft.jpeg";
 import eyemg from "@/images/eyemg.jpg";
 import outerbox from "@/images/outerbox.jpg";
@@ -18,6 +19,20 @@ import { BriefcaseIcon } from "./icons/BriefcaseIcon";
 import { CalendarIcon } from "./icons/CalendarIcon";
 
 const jobsList = [
+  {
+    icon: zgm,
+    role: "Front End Web Developer",
+    company: "Zero Gravity Marketing",
+    location: "Remote",
+    period: "September 2024 - May 2025",
+    type: "Full-time",
+    description: [
+      "Created, maintained, and developed WordPress sites, as well as Shopify and various e-commerce websites, ensuring optimal performance and seamless user experiences.",
+      "Worked across platforms such as Duda, HubSpot CMS, and Craft CMS, applying custom solutions to meet client specifications.",
+      "Collaborated with other developers and participated in daily sprints to maintain alignment and enhance project delivery.",
+      "Applied Git for version control and project management, ensuring consistent code quality and smooth deployment processes."
+    ],
+  },
   {
     icon: southleft,
     role: "Senior Front End Web Developer",
