@@ -4,7 +4,7 @@ import CardContent from "../ui/CardContent";
 
 const details = [
   { label: "Location", value: "Mesa, AZ" },
-  { label: "Experience", value: "> 9 years" },
+  { label: "Experience", value: "> 10 years" },
 ];
 
 export default function Information() {
